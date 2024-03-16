@@ -44,21 +44,3 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 #cp -rf packages/libs/libnetfilter-queue package/libs/
 
 # 修改内核设置
-echo "CONFIG_IP_SET=y" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_IP_SET_HASH_IPPORT=y" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_IP_SET_MAX=256" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_NETFILTER=y" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_NETFILTER_FAMILY_ARP=y" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_NETFILTER_FAMILY_BRIDGE=y" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_NETFILTER_NETLINK=y" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_NETFILTER_NETLINK_GLUE_CT=y" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_NETFILTER_NETLINK_LOG=y" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_NETFILTER_XTABLES=y" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_NFT_REJECT=m" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_NFT_REJECT_IPV4=m" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_NF_CONNTRACK=y" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_NF_CONNTRACK_LABELS=y" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_NF_CT_NETLINK=y" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_NF_DEFRAG_IPV4=y" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_NF_REJECT_IPV4=m" >> target/linux/mediatek/filogic/config-5.15
-echo "CONFIG_NF_TABLES=y" >> target/linux/mediatek/filogic/config-5.15
